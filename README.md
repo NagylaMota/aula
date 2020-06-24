@@ -1,4 +1,4 @@
-![care-staff-area](https://user-images.githubusercontent.com/42254727/85588064-b88dea00-b618-11ea-9ec2-cc476d88a42c.png)  # Meu Médico 
+![care-staff-area](https://user-images.githubusercontent.com/42254727/85588064-b88dea00-b618-11ea-9ec2-cc476d88a42c.png)   Meu Médico 
 
 ##### O Meu Médico é um aplicativo que vai te ajudar a localizar qual hospital ou pronto atendimento está mais perto de você!
 
