@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:app_aula/lista.dart';
@@ -183,14 +184,14 @@ class _LoginPageState extends State<LoginPage> {
                               }
                             } catch (e) {
                               print("deu errado");
-                              return AlertDialog(
-                                title: Text("Usuario ou senha incorretos"),
-                                actions: <Widget>[
-                                  FlatButton(
-                                    child: Text("OK"),
-                                    onPressed: () {},
-                                  )
-                                ],
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context){
+                                    return AlertDialog(
+                                      title: Text("Erro ao Logar"),
+                                      content: Text("Usuário ou senha Incorreto!"),
+                                    );
+                                }
                               );
                             }
                           },

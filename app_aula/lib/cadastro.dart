@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// import 'package:app_aula/lista.dart';
-// import 'package:app_aula/cadastro.dart';
 
 // void main() => runApp(LoginApp());
 
@@ -176,7 +174,27 @@ class _Cadastro extends State<Cadastro> {
                                       email: username,
                                       password: password)) as FirebaseUser;
                               if (user != null) {
-                                print("oi");
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context){
+                                    return AlertDialog(
+                                      title: Text("Cadastro Realizado com sucesso"),
+                                      content: Text("Logue com o usuário e senha!"),
+                                    );
+                                  }
+                                );
+                                Navigator.of(context).pop();
+                              }
+                              else {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context){
+                                    return AlertDialog(
+                                      title: Text("Erro ao Fazer cadastro"),
+                                      content: Text("Tente novamente"),
+                                    );
+                                  }
+                                );
                               }
                             },
                             shape: new RoundedRectangleBorder(
