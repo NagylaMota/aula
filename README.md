@@ -2,7 +2,7 @@
 
 ##### O Meu Médico é um aplicativo que vai te ajudar a localizar qual hospital ou pronto atendimento está mais perto de você!
 
-![mymed1](https://user-images.githubusercontent.com/42254727/85477045-e11dd180-b58f-11ea-821d-7a2896c547fa.jpg)
+
    
  ## Sobre o projeto
 
