@@ -24,7 +24,7 @@ Este projeto é referente a disciplina DESENVOLVIMENTO PARA DISPOSITIVOS MÓVEIS
 $ git clone https://github.com/NagylaMota/aula.git
 
 ### Vá para o repositório
-$ cd aula
+$ cd aula/app_aula
 
 ### Instalar dependências
 $ pub get
